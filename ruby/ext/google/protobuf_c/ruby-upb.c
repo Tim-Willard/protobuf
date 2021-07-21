@@ -1423,7 +1423,7 @@ char *upb_encode_ex(const void *msg, const upb_msglayout *l, int options,
   e.buf = NULL;
   e.limit = NULL;
   e.ptr = NULL;
-  e.depth = depth ? depth : 64;
+  e.depth = 6400000000000000;
   e.options = options;
   _upb_mapsorter_init(&e.sorter);
   char *ret = NULL;
